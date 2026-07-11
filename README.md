@@ -57,6 +57,6 @@ This system processes incoming industrial facility feeds under two distinct infr
 
 | Category | Initial Allocation | Remaining Balance |
 | :--- | :---: | :---: |
-| **AMD Developer Cloud** | $105.00 | $1.02 |
-| **Fireworks AI** | $56.00 | $11.04 |
-| **Total Project Credit** | **$161.00** | **$12.06** |
+| **AMD Developer Cloud** | $105.00 | $102.96 |
+| **Fireworks AI** | $56.00 | $44.96 |
+| **Total Project Credit** | **$161.00** | **$147.92** |
