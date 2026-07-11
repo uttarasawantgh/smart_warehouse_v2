@@ -46,8 +46,17 @@ This system processes incoming industrial facility feeds under two distinct infr
 * `extract_amd_telemetry.py` - Using compliance_alerts_log_amd.csv and compliance_time_series_ledger_amd.json timestamps capture tentative benchmark similar to fireworksAI
 * `compliance_alerts_log_amd.csv` / `_fireworks.csv` - The parsed operational risk matrices displayed in Tab 1.
 * `compliance_time_series_ledger_amd.json` / `_fireworks.json` - The multi-ledger data analytics mapping used for the interactive timeline trends in Tab 2.
+* FireworksAI fine-tuning activity is done using ID accounts/<myemail>-k6jmmt/supervisedFineTuningJobs/alycv3uw and deployment job is created using ID accounts/<myemail>-k6jmmt/deployments/wavb1x6c
 * Create .env file in your local directory and set following variables
 * FIREWORKS_ACCOUNT_ID
 * FIREWORKSAI_API_KEY
 * ROBOFLOW_API_KEY
 * HF_TOKEN
+
+### 💰 Resource Management & Financial Efficiency
+
+| Category | Initial Allocation | Remaining Balance |
+| :--- | :---: | :---: |
+| **AMD Developer Cloud** | $105.00 | $1.02 |
+| **Fireworks AI** | $56.00 | $11.04 |
+| **Total Project Credit** | **$161.00** | **$12.06** |
