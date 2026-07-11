@@ -59,4 +59,5 @@ This system processes incoming industrial facility feeds under two distinct infr
 | :--- | :---: | :---: |
 | **AMD Developer Cloud** | $105.00 | $102.96 |
 | **Fireworks AI** | $56.00 | $44.96 |
+| **HuggingFace ZeroGPU** | NA on-demand | $0 |
 | **Total Project Credit** | **$161.00** | **$147.92** |
