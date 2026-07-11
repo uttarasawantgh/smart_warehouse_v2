@@ -1,0 +1,18 @@
+﻿# User Request: Data, Models, & Envs
+*.csv
+*.json
+data/
+models/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secret Layer
+.env
+.env.local
+
+# System Clutter
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,7 @@
+transformers>=4.51.0
+accelerate>=1.0.0
+peft>=0.18.0
+datasets>=3.4.0
+streamlit
+roboflow
+openai
