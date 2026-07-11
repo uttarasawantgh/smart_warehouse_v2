@@ -1,24 +1,15 @@
-ROBOFLOW_API_KEY=your_key_here
-
-FIREWORKS_API_KEY=your_key_here
-
-HF_TOKEN=your_key_here
-
-FIREWORKSAI_API_KEY=your_key_here
-
-
-"Ensure your fine-tuned model checkpoint is located in models/checkpoint/ or set the DYNAMIC_ADAPTER_DIR environment variable to point to your specific path."
-
 # 🏭 AI Smart Warehouse Safety & Audit System
 
 A Multi-Track Physical AI Compliance Dashboard utilizing vision-language models (VLMs) to automate equipment safety, inventory tracking, and regulatory compliance. This project serves as a technical benchmark demonstrating the performance and throughput advantages of running localized inference on dedicated hardware versus public serverless cloud infrastructure.
+
+---
 
 ## 🚀 Project Links & Presentation Assets
 
 * **🌐 Live Interactive Dashboard:** [Hugging Face Space Live App](https://huggingface.co/spaces/uttarasawant/smartwarehouse) *(Direct Fullscreen App: `https://uttarasawant-smartwarehouse.hf.space`)*
 * **📊 Project Slide Deck:** [View the Presentation Slides](https://huggingface.co/spaces/uttarasawant/smartwarehouse/resolve/main/AI%20Smart%20Warehouse%20Safety%20%26%20Audit%20System.pdf)
-* **🎬 Video Demonstration:** [Watch the Technical Walkthrough](https://youtu.be/eTtG0kP_vwc)
-* **🎬 Core logic:** [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_new)
+* **🎬 Video Demonstration:** [Watch the Technical Walkthrough](https://youtu.be/QI2QIqxWNDY)
+* **🎬 Core logic:** [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_v2)
 * **🎬 UI logic:** [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_ui)
 
 ---
@@ -42,8 +33,21 @@ This system processes incoming industrial facility feeds under two distinct infr
 
 ## 🛠️ Repository & System Structure
 
-* `download_data.py` - Downloads roboflow dataset for warehouse equipment using ROBOFLOW_API key into local data/raw into COCO JSON format. This is common to AMD and FireworksAI platform.
-* `prepare_dataset.py` - Converts a local image file into a Base64 data URI string for Fireworks VLM ingest warehouse_train_ready.jsonl and will be used to upload to fireworksAI
-*  `prepare_dataset_amd.py` - Converts a local image file into a Base64 data URI string for Fireworks VLM ingest warehouse_train_ready.jsonl and will be used to upload to fireworksAI
-
-
+* `download_data.py` - Code to download Roboflow dataset common functionality for AMD and FireworksAI platforms
+* `prepare_dataset_amd.py` / `_fireworks.py` - Convert COCO JSON format to VLM format and copy output into data/processed folder
+* `upload_to_fireworks.py` - Upload warehouse_train.jsonl output from prepare_dataset into fireworksAI
+* `download_weights_fireworks.py` -  After fine-tuning in FireworksAI download fine-tuned weights locally
+* `engine_fireworks_qwen.py` - Inference engine for fireworksAI
+* `train_amd_native.py` - Use warehouse_train_ready.json output from prepare_dataset for AMD and use it to fine-tune model save output into models/amd_warehouse_qwen_lora folder
+* `inference_amd.py` - Run inference on AMD using test image
+* `batch_audit_amd.py` - Run through all test images through fine-tuned weights on AMD and save into compliance_alerts_log_amd.csv and compliance_time_series_ledger_amd.json
+* `run_fireworks_batch.py` - Run through all test images through fine-tuned weights on FireworksAI and save into compliance_alerts_log_fireworks.csv and compliance_time_series_ledger_fireworks.json
+* `run_fireworks_benchmark.py` - Calculate benchmark data for fireworksAI inferencing
+* `extract_amd_telemetry.py` - Using compliance_alerts_log_amd.csv and compliance_time_series_ledger_amd.json timestamps capture tentative benchmark similar to fireworksAI
+* `compliance_alerts_log_amd.csv` / `_fireworks.csv` - The parsed operational risk matrices displayed in Tab 1.
+* `compliance_time_series_ledger_amd.json` / `_fireworks.json` - The multi-ledger data analytics mapping used for the interactive timeline trends in Tab 2.
+* Create .env file in your local directory and set following variables
+* FIREWORKS_ACCOUNT_ID
+* FIREWORKSAI_API_KEY
+* ROBOFLOW_API_KEY
+* HF_TOKEN
