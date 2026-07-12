@@ -30,8 +30,23 @@ This system processes incoming industrial facility feeds under two distinct infr
 2. **Zero Marginal Operational Cost:** Local deployment allows the system to process massive token densities with $0.00 ongoing infrastructure costs, compared to volatile metered cloud usage.
 
 ---
+### Roboflow Dataset Citation
+@misc{ logistics-sz9jr_dataset,
+  title = { Logistics Dataset },
+  type = { Open Source Dataset },
+  author = { Large Benchmark Datasets },
+  howpublished = { \url{ https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr } },
+  url = { https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr },
+  journal = { Roboflow Universe },
+  publisher = { Roboflow },
+  year = { 2025 },
+  month = { jan },
+  note = { visited on 2026-07-12 },
+}
 
-## 🛠️ Repository & System Structure
+---
+
+## 🛠️ Repository, System Structure & Script Order
 
 * `download_data.py` - Code to download Roboflow dataset common functionality for AMD and FireworksAI platforms
 * `prepare_dataset_amd.py` / `_fireworks.py` - Convert COCO JSON format to VLM format and copy output into data/processed folder
@@ -52,6 +67,8 @@ This system processes incoming industrial facility feeds under two distinct infr
 * FIREWORKSAI_API_KEY
 * ROBOFLOW_API_KEY
 * HF_TOKEN
+
+---
 
 ### 💰 Resource Management & Financial Efficiency
 
