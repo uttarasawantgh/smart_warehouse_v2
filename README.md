@@ -51,8 +51,8 @@ Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Ro
 * `run_fireworks_batch.py` - Run through all test images through fine-tuned weights on FireworksAI and save into compliance_alerts_log_fireworks.csv and compliance_time_series_ledger_fireworks.json
 * `run_fireworks_benchmark.py` - Calculate benchmark data for fireworksAI inferencing
 * `extract_amd_telemetry.py` - Using compliance_alerts_log_amd.csv and compliance_time_series_ledger_amd.json timestamps capture tentative benchmark similar to fireworksAI
-* `compliance_alerts_log_amd.csv` / `_fireworks.csv` - The parsed operational risk matrices displayed in Tab 1.
-* `compliance_time_series_ledger_amd.json` / `_fireworks.json` - The multi-ledger data analytics mapping used for the interactive timeline trends in Tab 2.
+* `compliance_alerts_log_amd.csv` / `_fireworks.csv` - The parsed operational risk matrices displayed in Tab 1. This is read in UI logic: [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_ui)
+* `compliance_time_series_ledger_amd.json` / `_fireworks.json` - The multi-ledger data analytics mapping used for the interactive timeline trends in Tab 2. This is read in UI logic: [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_ui)
 * FireworksAI fine-tuning activity is done using ID accounts/<myemail>-k6jmmt/supervisedFineTuningJobs/alycv3uw and deployment job is created using ID accounts/<myemail>-k6jmmt/deployments/wavb1x6c
 * Create .env file in your local directory and set following variables
 * FIREWORKS_ACCOUNT_ID
