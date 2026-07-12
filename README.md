@@ -34,21 +34,7 @@ This system processes incoming industrial facility feeds under two distinct infr
 
 If you use this dataset in your research or project, please cite it as follows:
 
-Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Roboflow Universe. https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr
-
-```bibtex
-@misc{ logistics-sz9jr_dataset,
-  title = { Logistics Dataset },
-  type = { Open Source Dataset },
-  author = { Large Benchmark Datasets },
-  howpublished = { \url{ [https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr](https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr) } },
-  url = { [https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr](https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr) },
-  journal = { Roboflow Universe },
-  publisher = { Roboflow },
-  year = { 2025 },
-  month = { jan },
-  note = { visited on 2026-07-12 },
-}
+Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Roboflow Universe. https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9j
 
 ---
 
