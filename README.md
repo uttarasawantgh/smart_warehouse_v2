@@ -71,3 +71,14 @@ Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Ro
 | **Fireworks AI** | $56.00 | $44.96 |
 | **HuggingFace ZeroGPU** | NA on-demand | $0 |
 | **Total Project Credit** | **$161.00** | **$147.92** |
+
+---
+
+### 🤝 Acknowledgments & Tools
+
+This project was developed through a structured technical pipeline with support from the following tools:
+Gemini: Utilized as an AI collaborator for architectural troubleshooting, debugging complex structural normalization logic, and optimizing code documentation. 
+AMD Developer Cloud & PyTorch ROCm: Provided the high-performance local compute environment necessary for model fine-tuning and infrastructure benchmarking.
+Fireworks AI: Served as the secondary benchmarking gateway for infrastructure latency analysis. 
+Roboflow: Computer-vision datasets for fine-tuning
+Hugging Face Spaces: Hosting the user interface to read compliance logs and time series data output from inferencing by AMD and FireworksAI platforms on fine-tuned models
