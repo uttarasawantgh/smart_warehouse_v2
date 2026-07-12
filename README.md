@@ -40,7 +40,8 @@ Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Ro
 
 ## 🛠️ Repository, System Structure & Script Order
 
-* `download_data.py` - Code to download Roboflow dataset common functionality for AMD and FireworksAI platforms
+* Execute this repository first, generate CSV and JSON files below and run UI logic: [Visit github link](https://github.com/uttarasawantgh/smart_warehouse_ui) to read those output files.
+*  `download_data.py` - Code to download Roboflow dataset common functionality for AMD and FireworksAI platforms
 * `prepare_dataset_amd.py` / `_fireworks.py` - Convert COCO JSON format to VLM format and copy output into data/processed folder
 * `upload_to_fireworks.py` - Upload warehouse_train.jsonl output from prepare_dataset into fireworksAI
 * `download_weights_fireworks.py` -  After fine-tuning in FireworksAI download fine-tuned weights locally
