@@ -30,7 +30,7 @@ This system processes incoming industrial facility feeds under two distinct infr
 2. **Zero Marginal Operational Cost:** Local deployment allows the system to process massive token densities with $0.00 ongoing infrastructure costs, compared to volatile metered cloud usage.
 
 ---
-## Citation
+## 🚀 Citation
 
 If you use this dataset in your research or project, please cite it as follows:
 
