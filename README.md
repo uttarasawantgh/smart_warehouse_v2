@@ -30,13 +30,19 @@ This system processes incoming industrial facility feeds under two distinct infr
 2. **Zero Marginal Operational Cost:** Local deployment allows the system to process massive token densities with $0.00 ongoing infrastructure costs, compared to volatile metered cloud usage.
 
 ---
-### Roboflow Dataset Citation
+## Citation
+
+If you use this dataset in your research or project, please cite it as follows:
+
+Large Benchmark Datasets. (2025). *Logistics Dataset* (Version 1) [Data set]. Roboflow Universe. https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr
+
+```bibtex
 @misc{ logistics-sz9jr_dataset,
   title = { Logistics Dataset },
   type = { Open Source Dataset },
   author = { Large Benchmark Datasets },
-  howpublished = { \url{ https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr } },
-  url = { https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr },
+  howpublished = { \url{ [https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr](https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr) } },
+  url = { [https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr](https://universe.roboflow.com/large-benchmark-datasets/logistics-sz9jr) },
   journal = { Roboflow Universe },
   publisher = { Roboflow },
   year = { 2025 },
